@@ -1,4 +1,29 @@
-In this project, let's build **Nxt Watch** by applying the concepts we have learned till now.
+In this project, 
+# User Details App
+
+This is a React.js application that fetches and displays a list of users from an API. The application includes features for searching, filtering, viewing detailed information about each user, and toggling between light and dark modes.
+
+## Features
+
+- **User List**: Displays a list of users fetched from an API.
+- **User Details**: View detailed information about a selected user.
+- **Search & Filter**: Filter the users based on their name or username.
+- **Dark/Light Mode**: Toggle between dark and light modes for a better user experience.
+
+## Technologies Used
+
+- React.js
+- React Router
+- Context API (for managing dark/light mode)
+- Fetch API (to retrieve data from the user API)
+- CSS for styling
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/user-details-app.git
 
 ### Refer to the videos below:
 
@@ -22,100 +47,56 @@ In this project, let's build **Nxt Watch** by applying the concepts we have lear
 
 ### Design Files
 
-<details>
-<summary>Login Route</summary>
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Login](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-sm-outputs.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Login Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-failure-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Login - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-light-theme-lg-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Login - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-dark-theme-lg-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Login Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-failure-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Login Failure - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-failure-dark-theme-lg-output-v1.png)
-
-</details>
 
 <details>
 <summary>Home Route</summary>
 
-- [Extra Small (Size < 576px) - Home](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-xs-outputs.png)
-- [Small (Size >= 576px) - Home - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-light-theme-sm-output.png)
-- [Small (Size >= 576px) - Home - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-dark-theme-sm-output.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Home - No Search Results](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-no-videos-sm-outputs.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Home Failure](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-failure-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home - No search results - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-no-videos-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home - No search results - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-no-videos-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-failure-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home Failure - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-failure-dark-theme-lg-output-v0.png)
+## Home Route
+
+The **Home Route** (`/`) is the main entry point of the application. When you visit this route, it will display a list of users fetched from the **JSONPlaceholder API**. This route is responsible for:
+
+- Fetching and displaying a list of users.
+- Providing a link to view the details of each user.
+- Enabling the dark mode and light mode toggle functionality.
+
+### Features:
+- Displays a paginated list of users.
+- Each user can be clicked to view more detailed information.
+- Supports both light and dark themes, which can be toggled by the user.</details>
+
+<details>
+<summary>UserrDetails Route</summary>
+
+## UserDetails Page
+
+The **UserDetails Page** (`/user/:id`) is responsible for displaying detailed information about a specific user. When a user clicks on a specific user from the Home Route, they are navigated to this page, where more detailed information about the user is shown. The page fetches user data from the **JSONPlaceholder API** using the `id` parameter passed in the URL.
+
+### Features:
+- Displays detailed information such as:
+  - Name
+  - Username
+  - Email
+  - Phone number
+  - Address
+  - Company information
+  - Website link
+- Supports dark and light themes, which adjust the text color, background color, and button styles.
+- Provides a **Back Button** to navigate back to the Home Route.
+
+### URL Structure:
+- **Route:** `/user/:id`
+  - The `:id` is a dynamic parameter representing the unique ID of the user.
+
+Example of user URL:
+- `/user/1`
 
 </details>
 
-<details>
-<summary>Trending Route</summary>
-
-- [Extra Small (Size < 576px) - Trending](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-success-xs-outputs.png)
-- [Small (Size >= 576px) - Trending - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-success-light-theme-sm-output.png)
-- [Small (Size >= 576px) - Trending - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-success-dark-theme-sm-output.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Trending Failure](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-failure-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Trending - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-success-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Trending - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-success-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Trending Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-failure-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Trending Failure - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-failure-dark-theme-lg-output-v0.png)
 
 </details>
 
-<details>
-<summary>Gaming Route</summary>
 
-- [Extra Small (Size < 576px) - Gaming](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-success-xs-outputs.png)
-- [Small (Size >= 576px) - Gaming - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-success-light-theme-sm-output.png)
-- [Small (Size >= 576px) - Gaming - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-success-dark-theme-sm-output.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Gaming Failure](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-failure-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Gaming - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-success-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Gaming - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-success-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Gaming Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-failure-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Gaming Failure - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-failure-dark-theme-lg-output-v0.png)
-
-</details>
-
-<details>
-<summary>Video Item Details Route</summary>
-
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Video Item Details](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-success-sm-outputs.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Video Item Details Failure](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-failure-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Video Item Details - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-success-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Video Item Details - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-success-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Video Item Details Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-failure-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Video Item Details Failure - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-failure-dark-theme-lg-output-v0.png)
-
-</details>
-
-<details>
-<summary>Saved Videos Route</summary>
-
-- [Extra Small (Size < 576px) - No Saved Videos](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-sm-outputs.png)
-- [Small (Size >= 576px) - Saved Videos - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-saved-videos-light-theme-sm-output-v0.png)
-- [Small (Size >= 576px) - Saved Videos - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-saved-videos-dark-theme-sm-output-v0.png)
-- [Extra Small (Size < 576px) - Saved Videos](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-saved-videos-xs-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - No Saved Videos - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - No Saved Videos - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Saved Videos - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-saved-videos-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Saved Videos - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-saved-videos-dark-theme-lg-output-v0.png)
-
-</details>
-
-<details>
-<summary>Popup Design Files</summary>
-
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Logout](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-logout-popup-sm-outputs.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Menu](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-menu-popup-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Logout - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-logout-popup-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Logout - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-logout-popup-dark-theme-lg-output-v0.png)
-
-</details>
-
-<details>
 <summary>Not Found Route</summary>
 
 - [Extra Small (Size < 576px) and Small (Size >= 576px) - Not Found](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-page-not-found-sm-output.png)
