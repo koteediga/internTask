@@ -1,0 +1,61 @@
+.user-detail {
+  width: 90%; /* Make it responsive for smaller screens */
+  max-width: 600px; /* Limit the width for larger screens */
+  margin: 40px auto; /* Center the container horizontally */
+  padding: 20px; /* Internal spacing */
+  background-color: #fff; /* Light background */
+  border: 1px solid #ddd; /* Subtle border for separation */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Depth effect with shadow */
+}
+
+.dark-mode {
+  background-color: #000 !important; /* Black background for dark mode */
+  color: #fff !important; /* White text for dark mode */
+  border: 1px solid #444;
+}
+
+.dark-mode .user-detail {
+  width: 90%; /* Consistent behavior in dark mode */
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark background for dark mode */
+  color: #ddd; /* Light text for readability in dark mode */
+  border: 1px solid #444; /* Subtle border in dark mode */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Slightly deeper shadow for dark mode */
+}
+
+.user-detail h1 {
+  text-align: center; /* Center-align the title */
+  font-size: 2rem; /* Adjusted font size */
+  color: inherit; /* Inherit text color for light and dark modes */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.user-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: inherit; /* Inherit text color */
+  line-height: 1.5; /* Improved readability */
+}
+
+.back-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0; /* Center the button */
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background */
+  color: #fff; /* Button text color */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Button shadow */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+}
