@@ -155,7 +155,7 @@ The app must have the following functionalities
 
 **Home  API**
 
-#### URL: `[https://apis.ccbp.in/videos/all?search=](https://jsonplaceholder.typicode.com/users)`
+#### URL: `[https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)`
 
 #### Method: `GET`
 
