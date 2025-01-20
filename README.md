@@ -25,11 +25,15 @@ This is a React.js application that fetches and displays a list of users from an
 **Success View** <br/>
 
 <div style="text-align: center;">
-     <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
+  <video 
+    style="max-width: 80%; box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.12); outline: none;" 
+    loop autoplay muted controls>
     <source src="https://www.kapwing.com/678e4841753ea2fe13efaa66/studio/editor/sharing.mp4" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
 </div>
 <br/>
+
 
 **Failure View** <br/>
 
