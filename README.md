@@ -18,12 +18,7 @@ This is a React.js application that fetches and displays a list of users from an
 - Fetch API (to retrieve data from the user API)
 - CSS for styling
 
-## Installation
 
-1. Clone this repository to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/user-details-app.git
 
 ### Refer to the videos below:
 
