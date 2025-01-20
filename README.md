@@ -25,26 +25,12 @@ This is a React.js application that fetches and displays a list of users from an
 **Success View** <br/>
 
 <div style="text-align: center;">
-  <video 
-    style="max-width: 80%; box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.12); outline: none;" 
-    loop autoplay muted controls>
-    <source src="https://www.kapwing.com/678e4841753ea2fe13efaa66/studio/editor/sharing.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+ <a href="https://drive.google.com/file/d/1qEvmoQhNg67DDNbgzNJICcRu82-ifrm3/view?usp=drive_link"> Drive Link</a>
 </div>
 <br/>
 
 
-**Failure View** <br/>
 
-<div style="text-align: center;">
-    <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-failure-output-v0.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
-
-### Design Files
 
 
 
