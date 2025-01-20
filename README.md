@@ -414,22 +414,8 @@ Returns a response containing the list of all user
 
 
 
-### Quick Tips
-
-<details>
-<summary>Click to view</summary>
-<br>
-
-- To build this project, take a look at the <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b01fca1c-aa5c-4d79-b81e-0220e7649bd0&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Popup</a> and <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b6392b63-25f6-4215-be09-9f23ad91d789&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Video Player</a> reading materials
-
-- To style popup content use `.popup-content` class
 
 
-
-
-</details>
-
-### Important Note
 
 <details>
 <summary>Click to view</summary>
