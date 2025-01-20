@@ -1,0 +1,27 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center-align text */
+  background-color: #f8f9fa; /* Optional background color */
+  color: #333; /* Optional text color */
+}
+
+.not-found-container img {
+  max-width: 100%;
+  height: auto; /* Maintain image aspect ratio */
+  margin-bottom: 20px; /* Add space between the image and the text */
+}
+
+.not-found-container h1 {
+  font-size: 2rem; /* Adjust the font size */
+  margin-bottom: 10px;
+  color: #ff4757; /* Optional heading color */
+}
+
+.not-found-container p {
+  font-size: 1rem; /* Adjust the font size */
+  color: #555; /* Optional paragraph color */
+}
