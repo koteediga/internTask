@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Loader from 'react-loader-spinner'
 import ThemeContext from '../Context/ThemeContext' 
 import './index.css'
 
@@ -60,7 +61,9 @@ class Home extends Component {
     const sortedUsers = this.getSortedUsers(filteredUsers)
 
     if (loading) {
-      return <p className="loading">Loading...</p>
+      return <p className="loading"> <div className="loader-container" data-testid="loader">
+    <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
+  </div></p>
     }
 
     if (error) {
